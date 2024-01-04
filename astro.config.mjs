@@ -1,15 +1,29 @@
 import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'League1 Ontario',
+			customCss: ['./src/tailwind.css'],
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
+				{
+					label: 'Team Officials',
+					autogenerate: { directory: 'team-officials' }
+				},
+				{
+					label: "Referees",
+					autogenerate: { directory: 'referees' }
+				},
+				{
+					label: "MDOCs",
+					autogenerate: { directory: 'mdocs' }
+				},
 				{
 					label: 'Guides',
 					items: [
@@ -23,5 +37,6 @@ export default defineConfig({
 				},
 			],
 		}),
+		tailwind({ applyBaseStyles: false })
 	],
 });
