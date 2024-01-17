@@ -8,9 +8,6 @@ export default defineConfig({
 		starlight({
 			title: 'League1 Ontario',
 			customCss: ['./src/tailwind.css'],
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
 			sidebar: [
 				{
 					label: 'Team Officials',
