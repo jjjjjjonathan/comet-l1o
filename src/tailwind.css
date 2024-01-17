@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --jade-hsl: 158, 100%, 54%;
+  --jade-hsl: 198, 81%, 45%;
   --overlay-jade: hsla(var(--jade-hsl), 0.2);
 }
 
 :root[data-theme='light'] {
-  --jade-hsl: 158, 100%, 33%;
+  --jade-hsl: 198, 81%, 45%;
 }
 
 [data-has-hero] .page {

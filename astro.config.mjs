@@ -6,9 +6,18 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'League1 Ontario',
+			title: 'League1 Canada',
 			customCss: ['./src/tailwind.css'],
+			favicon: 'favicon.ico',
 			sidebar: [
+				{
+					label: 'Guides',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Getting Started', link: '/guides/getting-started' },
+						{ label: 'Example Guide', link: '/guides/example/' },
+					],
+				},
 				{
 					label: 'Team Officials',
 					autogenerate: { directory: 'team-officials' }
@@ -21,13 +30,7 @@ export default defineConfig({
 					label: "MDOCs",
 					autogenerate: { directory: 'mdocs' }
 				},
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
-				},
+
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
