@@ -14,6 +14,7 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
+						{ label: 'Logging in', link: '/guides/logging-in' },
 						{ label: 'Getting Started', link: '/guides/getting-started' },
 						{ label: 'Example Guide', link: '/guides/example/' },
 					],
