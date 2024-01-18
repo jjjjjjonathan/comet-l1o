@@ -3,11 +3,11 @@ title: Registering players
 description: A guide on registering players in COMET through the web application
 ---
 
-import { Image } from 'astro:assets';
-import searchSidebar from '@assets/search-sidebar.webp';
-import searchPlayer from '@assets/search-player.webp';
-import searchActiveRegistrations from '@assets/search-active-registrations.webp';
-import searchResults from '@assets/search-results.webp';
+import { Image } from "astro:assets";
+import searchSidebar from "@assets/search-sidebar.webp";
+import searchPlayer from "@assets/search-player.webp";
+import searchActiveRegistrations from "@assets/search-active-registrations.webp";
+import searchResults from "@assets/search-results.webp";
 
 In this guide, we will cover searching for players within COMET, and registering both existing and new COMET players to your club as club referents.
 
@@ -31,7 +31,7 @@ Click on the players tab in the left sidebar to open a list of more options, and
 
 <Image
   src={searchSidebar}
-  alt='A zoomed-in screenshot of the COMET web application. A red box highlights the sidebar where the Players tab and Search Players console resides.'
+  alt="A zoomed-in screenshot of the COMET web application. A red box highlights the sidebar where the Players tab and Search Players console resides."
 />
 
 ### Using the search form
@@ -40,7 +40,7 @@ From here, you can use the form to help narrow your search for a player. While a
 
 <Image
   src={searchPlayer}
-  alt='The form to search for players within COMET. Red boxes highlight key form fields: Family Name, First Name, and Date of Birth'
+  alt="The form to search for players within COMET. Red boxes highlight key form fields: Family Name, First Name, and Date of Birth"
 />
 
 :::tip
@@ -53,25 +53,36 @@ In the active registrations section under the search form, I also suggest clicki
 
 <Image
   src={searchActiveRegistrations}
-  alt='The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club'
+  alt="The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club"
 />
 
 Results will pop up if there are any, usually 10 players per page. You can further narrow your search results by typing in the box above each column.
 
 <Image
   src={searchResults}
-  alt='The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club'
+  alt="The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club"
 />
 
 If the player you're looking to register comes up in your search results, skip over to the section on [registering existing COMET players](#the-searched-player-is-already-in-comet)
 
 ## Register a player to your club
 
-Coming soon
+After searching whether a player exists in COMET or not, you can move on to registering the player.
 
 ### The searched player is not in COMET
 
-Coming soon
+- under player tab on left sidebar, click on first registration
+- form (anything in red is mandatory)
+  - national id = SEOS number?
+  - in family and first name enter their full names, but common name can be what they prefer to go by (the common name of "David Wayne Hoilett Jr." is "Junior Hoilett")
+  - passport number is an id number required by Canada Soccer. Not everyone will have passports, so use acronyms to distinguish what kind of id it is (add DL in the front if it's a driver's licence, HC for health card, etc.)
+  - position will be the player's main playing position
+- active registration
+  - make sure the club is correct, otherwise find it with magnifying glass
+  - organisation should be provincial governing body (ontario soccer, alberta soccer, bc soccer)
+  - if it's their first time in the system, keep registration type to first registration
+  - date from, that should be the date from when your player is a member of your club (you can make it the current date for simplicity's sake)
+- once saved, wait for approval from the league to confirm the registration
 
 ### The searched player is already in COMET
 
