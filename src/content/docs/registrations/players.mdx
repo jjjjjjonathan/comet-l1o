@@ -1,14 +1,15 @@
 ---
 title: Registering players
+description: A guide on registering players in COMET through the web application
 ---
 
-import { Image } from 'astro:assets'
-import searchSidebar from '@assets/search-sidebar.webp'
-import searchPlayer from '@assets/search-player.webp'
-import searchActiveRegistrations from '@assets/search-active-registrations.webp'
-import searchResults from '@assets/search-results.webp'
+import { Image } from 'astro:assets';
+import searchSidebar from '@assets/search-sidebar.webp';
+import searchPlayer from '@assets/search-player.webp';
+import searchActiveRegistrations from '@assets/search-active-registrations.webp';
+import searchResults from '@assets/search-results.webp';
 
-In this guide, we will cover searching for players within COMET, and registering both existing and new COMET players to your club.
+In this guide, we will cover searching for players within COMET, and registering both existing and new COMET players to your club as club referents.
 
 :::note
 
@@ -18,19 +19,29 @@ Player registration can only be done on the web application, not through the mob
 
 ## Search if a player is already in COMET
 
+---
+
 To maintain player history and prevent duplicates of the same player, we start by searching for the player.
 
 ### Finding the search console
 
+---
+
 Click on the players tab in the left sidebar to open a list of more options, and click on "Search" to open up the console on another page as highlighted in the red box of the image below.
 
-<Image src={searchSidebar} alt='A zoomed-in screenshot of the COMET web application. A red box highlights the sidebar where the Players tab and Search Players console resides.' />
+<Image
+  src={searchSidebar}
+  alt='A zoomed-in screenshot of the COMET web application. A red box highlights the sidebar where the Players tab and Search Players console resides.'
+/>
 
 ### Using the search form
 
 From here, you can use the form to help narrow your search for a player. While any of the fields can be used and are optional, I recommend searching by family name, first name, and/or date of birth.
 
-<Image src={searchPlayer} alt='The form to search for players within COMET. A red box highlights key form fields: Family Name, First Name, and Date of Birth' />
+<Image
+  src={searchPlayer}
+  alt='The form to search for players within COMET. Red boxes highlight key form fields: Family Name, First Name, and Date of Birth'
+/>
 
 :::tip
 
@@ -40,11 +51,17 @@ If a player has accented characters in their name, try searching with and withou
 
 In the active registrations section under the search form, I also suggest clicking the X beside "Organisation" and "Club" to leave those fields because those would limit to your search to only within that governing body or club (for example, you would use that to only search for players with registrations in Ontario Soccer). Include the organisation and/or club only if you know the player has existed in COMET before.
 
-<Image src={searchActiveRegistrations} alt='The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club' />
+<Image
+  src={searchActiveRegistrations}
+  alt='The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club'
+/>
 
 Results will pop up if there are any, usually 10 players per page. You can further narrow your search results by typing in the box above each column.
 
-<Image src={searchResults} alt='The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club' />
+<Image
+  src={searchResults}
+  alt='The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club'
+/>
 
 If the player you're looking to register comes up in your search results, skip over to the section on [registering existing COMET players](#the-searched-player-is-already-in-comet)
 
