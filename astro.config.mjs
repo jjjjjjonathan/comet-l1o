@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import starlight from '@astrojs/starlight';
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,33 +12,37 @@ export default defineConfig({
 			favicon: 'favicon.ico',
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Getting started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Logging in', link: '/guides/logging-in' },
-						{ label: 'Getting Started', link: '/guides/getting-started' },
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'Logging into COMET', link: '/getting-started/logging-in' },
 					],
 				},
 				{
-					label: 'Team Officials',
-					autogenerate: { directory: 'team-officials' }
+					label: 'Registrations',
+					autogenerate: { directory: 'registrations' }
 				},
 				{
-					label: "Referees",
-					autogenerate: { directory: 'referees' }
-				},
-				{
-					label: "MDOCs",
-					autogenerate: { directory: 'mdocs' }
+					label: "Match Operations",
+					autogenerate: { directory: 'match-operations' }
 				},
 
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Roles',
+					autogenerate: { directory: 'roles' },
 				},
 			],
 		}),
 		tailwind({ applyBaseStyles: false })
 	],
+	markdown: {
+		rehypePlugins: [
+			[
+				rehypeExternalLinks, {
+					target: '_blank',
+					rel: 'noopener noreferrer'
+				}
+			]
+		]
+	}
 });

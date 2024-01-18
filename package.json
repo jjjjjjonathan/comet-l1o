@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "bunx --bun astro dev",
+    "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "bunx --bun astro preview",
     "astro": "bunx --bun astro"
@@ -14,6 +14,7 @@
     "@astrojs/starlight-tailwind": "^2.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "4.1.0",
+    "rehype-external-links": "^3.0.0",
     "sharp": "^0.32.5",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3"
