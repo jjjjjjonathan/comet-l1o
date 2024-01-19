@@ -3,11 +3,15 @@ title: Registering players
 description: A guide on registering players in COMET through the web application
 ---
 
-import { Image } from "astro:assets";
-import searchSidebar from "@assets/search-sidebar.webp";
-import searchPlayer from "@assets/search-player.webp";
-import searchActiveRegistrations from "@assets/search-active-registrations.webp";
-import searchResults from "@assets/search-results.webp";
+import { Image } from 'astro:assets';
+import searchSidebar from '@assets/search-sidebar.webp';
+import searchPlayer from '@assets/search-player.webp';
+import searchActiveRegistrations from '@assets/search-active-registrations.webp';
+import searchResults from '@assets/search-results.webp';
+import firstRegistration from '@assets/first-registration.webp';
+import playerRegistrationLeft from '@assets/player-registration-left.webp';
+import playerRegistrationRight from '@assets/player-registration-right.webp';
+import playerActiveRegistrations from '@assets/player-active-registrations.webp';
 
 In this guide, we will cover searching for players within COMET, and registering both existing and new COMET players to your club as club referents.
 
@@ -31,7 +35,7 @@ Click on the players tab in the left sidebar to open a list of more options, and
 
 <Image
   src={searchSidebar}
-  alt="A zoomed-in screenshot of the COMET web application. A red box highlights the sidebar where the Players tab and Search Players console resides."
+  alt='A zoomed-in screenshot of the COMET web application. A red box highlights the sidebar where the Players tab and Search Players console resides.'
 />
 
 ### Using the search form
@@ -40,7 +44,7 @@ From here, you can use the form to help narrow your search for a player. While a
 
 <Image
   src={searchPlayer}
-  alt="The form to search for players within COMET. Red boxes highlight key form fields: Family Name, First Name, and Date of Birth"
+  alt='The form to search for players within COMET. Red boxes highlight key form fields: Family Name, First Name, and Date of Birth'
 />
 
 :::tip
@@ -53,14 +57,14 @@ In the active registrations section under the search form, I also suggest clicki
 
 <Image
   src={searchActiveRegistrations}
-  alt="The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club"
+  alt='The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club'
 />
 
 Results will pop up if there are any, usually 10 players per page. You can further narrow your search results by typing in the box above each column.
 
 <Image
   src={searchResults}
-  alt="The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club"
+  alt='The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club'
 />
 
 If the player you're looking to register comes up in your search results, skip over to the section on [registering existing COMET players](#the-searched-player-is-already-in-comet)
@@ -71,19 +75,57 @@ After searching whether a player exists in COMET or not, you can move on to regi
 
 ### The searched player is not in COMET
 
-- under player tab on left sidebar, click on first registration
-- form (anything in red is mandatory)
-  - national id = SEOS number?
-  - in family and first name enter their full names, but common name can be what they prefer to go by (the common name of "David Wayne Hoilett Jr." is "Junior Hoilett")
-  - passport number is an id number required by Canada Soccer. Not everyone will have passports, so use acronyms to distinguish what kind of id it is (add DL in the front if it's a driver's licence, HC for health card, etc.)
-  - position will be the player's main playing position
-- active registration
-  - make sure the club is correct, otherwise find it with magnifying glass
-  - organisation should be provincial governing body (ontario soccer, alberta soccer, bc soccer)
-  - if it's their first time in the system, keep registration type to first registration
-  - date from, that should be the date from when your player is a member of your club (you can make it the current date for simplicity's sake)
-- once saved, wait for approval from the league to confirm the registration
+If a player isn't in COMET, you'll be registering them into the system for the first time. Click on "Player registration" under the Players tab in the left sidebar.
+
+<Image
+  src={firstRegistration}
+  alt='The left navigation bar in COMET. A red box highlights the "First registration" button.'
+/>
+
+A form will open up where you can enter your player's information. Any form fields with red labels are mandatory, while the rest are optional.
+
+<Image
+  src={playerRegistrationLeft}
+  alt='The first half of the player registration form.'
+/>
+
+<Image
+  src={playerRegistrationRight}
+  alt='The second half of the player registration form.'
+/>
+
+:::tip
+
+- For **National ID**, put the player identification ID from your governing body (for Ontario Soccer, that is their SEOS number?).
+- Enter full names in the **Family** and **First Name** fields, but enter the player's preferred name under **Common Name**. For example, the common name of David Wayne Hoilett Jr. is **Junior Hoilett**.
+- **Passport #** is required by Canada Soccer, but we understand that not everyone will have a passport. Use something like a driver's licence or health card, and include an acronym in front of the number (something like `DL1234567890` for a driver's licence).
+- This will be the best time to include a player's headshot. Click on **Choose image** to upload a photo per your league's specifications in the manual.
+
+:::
+
+Before you save, you will also need to fill out the active registrations section at the bottom.
+
+<Image
+  src={playerActiveRegistrations}
+  alt='The active registrations form when adding a player to a club on COMET.'
+/>
+
+:::tip
+
+- If your club isn't automatically in the field, use the magnifying glass button to search for your club.
+- Ensure that the **organisation** is also your club's governing body (Alberta Soccer, BC Soccer, or Ontario Soccer).
+- Ensure that the discipline is **football** and not anything else.
+- Registration type in this case should be **First Registration**.
+- Enter the current date in the **Date From** field (if this changes we will let you know).
+
+:::
+
+Once you have successfully saved and submitted the player, wait for approval from the league to confirm the registration. After that, you player will be available in your competitions.
 
 ### The searched player is already in COMET
 
-Coming soon
+:::note
+
+We're still working on updating the documentation, and something will be here shortly!
+
+:::
