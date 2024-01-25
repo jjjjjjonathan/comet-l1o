@@ -4,16 +4,16 @@ description: A guide on registering players in COMET through the web application
 ---
 
 import { Image } from 'astro:assets';
-import searchSidebar from '@assets/search-sidebar.webp';
-import searchPlayer from '@assets/search-player.webp';
-import searchActiveRegistrations from '@assets/search-active-registrations.webp';
-import searchResults from '@assets/search-results.webp';
-import firstRegistration from '@assets/first-registration.webp';
-import playerRegistrationLeft from '@assets/player-registration-left.webp';
-import playerRegistrationRight from '@assets/player-registration-right.webp';
-import playerActiveRegistrations from '@assets/player-active-registrations.webp';
+import searchSidebar from '@assets/registrations/players/search-sidebar.webp';
+import searchPlayer from '@assets/registrations/players/search-player.webp';
+import searchActiveRegistrations from '@assets/registrations/players/search-active-registrations.webp';
+import searchResults from '@assets/registrations/players/search-results.webp';
+import firstRegistration from '@assets/registrations/players/first-registration.webp';
+import playerRegistrationLeft from '@assets/registrations/players/player-registration-left.webp';
+import playerRegistrationRight from '@assets/registrations/players/player-registration-right.webp';
+import playerActiveRegistrations from '@assets/registrations/players/player-active-registrations.webp';
 
-In this guide, we will cover searching for players within COMET, and registering both existing and new COMET players to your club as club referents.
+In this guide, we will cover searching for players within COMET, and registering both existing and new COMET players to your club.
 
 :::note
 
@@ -23,15 +23,11 @@ Player registration can only be done on the web application, not through the mob
 
 ## Search if a player is already in COMET
 
----
-
 To maintain player history and prevent duplicates of the same player, we start by searching for the player.
 
 ### Finding the search console
 
----
-
-Click on the players tab in the left sidebar to open a list of more options, and click on "Search" to open up the console on another page as highlighted in the red box of the image below.
+Click on the **Players** tab in the left sidebar to open a list of more options, and click on **Search Players** to open up the console on another page as highlighted in the red box of the image below.
 
 <Image
   src={searchSidebar}
@@ -53,11 +49,13 @@ If a player has accented characters in their name, try searching with and withou
 
 :::
 
-In the active registrations section under the search form, I also suggest clicking the X beside "Organisation" and "Club" to leave those fields because those would limit to your search to only within that governing body or club (for example, you would use that to only search for players with registrations in Ontario Soccer). Include the organisation and/or club only if you know the player has existed in COMET before.
+In the active registrations section under the search form, I also suggest clicking the X beside "Organisation" and "Club" to leave those fields because those would limit to your search to only within that governing body or club (for example, you would use that to only search for players with registrations in Ontario Soccer).
+
+Make sure to also uncheck any of the status checkboxes (**Entered** and **Confirmed** might be checked by default).
 
 <Image
   src={searchActiveRegistrations}
-  alt='The active registrations section to search for players within COMET. A red box highlights key form fields: Organisation and Club'
+  alt='The active registrations section to search for players within COMET. A red box on top highlights the registration status where all checkboxes should be unchecked. A red box on the bottom highlights form fields for Organisation and Club which should also be left blank.'
 />
 
 Results will pop up if there are any, usually 10 players per page. You can further narrow your search results by typing in the box above each column.
@@ -67,7 +65,7 @@ Results will pop up if there are any, usually 10 players per page. You can furth
   alt='The search results after searching for a player within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club'
 />
 
-If the player you're looking to register comes up in your search results, skip over to the section on [registering existing COMET players](#the-searched-player-is-already-in-comet)
+If the player you're looking to register comes up in your search results, skip over to the section on [registering existing COMET players](#the-searched-player-is-already-in-comet). Otherwise, continue on to register a new player to COMET and your club.
 
 ## Register a player to your club
 
@@ -75,7 +73,7 @@ After searching whether a player exists in COMET or not, you can move on to regi
 
 ### The searched player is not in COMET
 
-If a player isn't in COMET, you'll be registering them into the system for the first time. Click on "Player registration" under the Players tab in the left sidebar.
+If a player isn't in COMET, you'll be registering them into the system for the first time. Click on **First registration** under the Players tab in the left sidebar.
 
 <Image
   src={firstRegistration}
@@ -96,7 +94,7 @@ A form will open up where you can enter your player's information. Any form fiel
 
 :::tip
 
-- For **National ID**, put the player identification ID from your governing body (for Ontario Soccer, that is their SEOS number?).
+- For **National ID**, put the player identification ID from your governing body (for Ontario Soccer, that is their SEOS number?). (possibly change this)
 - Enter full names in the **Family** and **First Name** fields, but enter the player's preferred name under **Common Name**. For example, the common name of David Wayne Hoilett Jr. is **Junior Hoilett**.
 - **Passport #** is required by Canada Soccer, but we understand that not everyone will have a passport. Use something like a driver's licence or health card, and include an acronym in front of the number (something like `DL1234567890` for a driver's licence).
 - This will be the best time to include a player's headshot. Click on **Choose image** to upload a photo per your league's specifications in the manual.
