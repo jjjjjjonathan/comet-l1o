@@ -1,9 +1,18 @@
 ---
 title: Registering team officials
 description: A guide on registering team officials in COMET through the web application
-sidebar:
-  badge: 'Coming soon'
+next: false
 ---
+
+import { Image } from 'astro:assets';
+import searchCoachesSidebar from '@assets/registrations/team-officials/search-coaches-sidebar.webp';
+import searchCoachesForm from '@assets/registrations/team-officials/search-coaches-form.webp';
+import searchCoachesActiveRegs from '@assets/registrations/team-officials/search-coaches-active-regs.webp';
+import searchCoachesResults from '@assets/registrations/team-officials/search-coaches-results.webp';
+import newCoachRegistration from '@assets/registrations/team-officials/new-registration-coach.webp';
+import newCoachFormLeft from '@assets/registrations/team-officials/new-coach-form.webp';
+import newCoachFormRight from '@assets/registrations/team-officials/new-coach-form-right.webp';
+import newCoachActiveRegs from '@assets/registrations/team-officials/new-coach-active-regs.webp';
 
 In this guide, we will cover searching for team officials (such as coaches or athletic therapists) within COMET, and registering both existing and new COMET team officials to your club.
 
@@ -18,3 +27,103 @@ Team official registration can only be done on the web application, not through 
 To maintain a clear history of team officials and to prevent duplicates of the same team official, we start by seaching for them.
 
 ### Finding the search console
+
+Click on the **Coaches and Staff** tab in the left sidebar to open a list of options.
+
+Click on **Search coaches** to open up the console on another page. This would include roles such as **Head Coach**, **Assistant Coach**, **Goalkeeper Coach**, **Physical Trainer**, and **Athletic Trainer**.
+
+For other staff roles such as **Doctor**, **Physiotherapist**, and **Equpiment Manager**, click on **Search club staff** instead.
+
+<Image
+  src={searchCoachesSidebar}
+  alt='A zoomed-in screenshot of the COMET web application. The first red box from the top highlights the sidebar where the Coaches and Staff tab resides, along with the Search Coaches console. The second red box below highlights the option to search for club staff.'
+/>
+
+### Using the search form
+
+From here, you can use the form to help narrow your search for a coach or staff member. While any of the fields can be used and are optional, I recommend searching by family name, first name, and/or date of birth.
+
+<Image
+  src={searchCoachesForm}
+  alt='The form to search for coaches within COMET. Red boxes highlight key form fields: Family Name, First Name, and Date of Birth'
+/>
+
+:::tip
+
+If a coach or staff member has accented characters in their name, try searching with and without them when using name search.
+
+:::
+
+In the active registrations section under the search form, I also suggest clicking the X beside "Organisation" and "Club" to leave those fields because those would limit to your search to only within that governing body or club (for example, you would use that to only search for team officials with registrations in Ontario Soccer).
+
+Make sure to also uncheck any of the status checkboxes (**Entered** and **Confirmed** might be checked by default).
+
+<Image
+  src={searchCoachesActiveRegs}
+  alt='The active registrations section to search for coaches or club staff within COMET. A red box on top highlights the registration status where all five checkboxes should be unchecked. A red box on the bottom highlights form fields for Organisation and Club which should also be left blank.'
+/>
+
+Results will pop up if there are any, usually 10 entries per page. You can further narrow your search results by typing in the box above each column.
+
+<Image
+  src={searchCoachesResults}
+  alt='The search results after searching for a coach or staff member within COMET. A red box highlights the fields where you can narrow your search further: ID, Name, Date of Birth, and Club'
+/>
+
+If the coach or staff member you're looking to register comes up in your search results, skip over to the section on [registering existing COMET club officials](#the-searched-club-official-is-already-in-comet). Otherwise continue on to register a new official to COMET and your club.
+
+## Register an official to your club
+
+After searching whether a team official exists in COMET or not, you can move on to registering them.
+
+### The searched club official is not in COMET
+
+If a club official isn't in COMET, you'll be registering them into the system for the first time. Under the **Coaches and Staff** tab, click on **New coach** or **New club staff**, depending on who you are registering, in the left sidebar.
+
+<Image
+  src={newCoachRegistration}
+  alt='The left navigation bar in COMET. Two red boxes highlight the buttons to create a new coach or new club staff member'
+/>
+
+A form will open up where you can enter your club official's information. Any form fields with red labels are mandatory, while the rest are optional.
+
+<Image
+  src={newCoachFormLeft}
+  alt='The first half of the coach registration form'
+/>
+
+<Image
+  src={newCoachFormRight}
+  alt='The second half of the coach registration form'
+/>
+
+:::tip
+
+- For **National ID**, put the player identification ID from your governing body (for Ontario Soccer, that is their SEOS number?). (possibly change this)
+- Enter full names in the **Family** and **First Name** fields, but enter the club official's preferred name under **Common Name**. For example, the common name of David Wayne Hoilett Jr. is **Junior Hoilett**.
+- **Passport #** is required by Canada Soccer, but we understand that not everyone will have a passport. Use something like a driver's licence or health card, and include an acronym in front of the number (something like `DL1234567890` for a driver's licence).
+- This will be the best time to include a coach or club official's headshot. Click on **Choose image** to upload a photo per your league's specifications in the manual. (check if headshots are mandatory for club officials)
+
+:::
+
+Before you save, you will also need to fill out the active registrations section at the bottom.
+
+<Image
+  src={newCoachActiveRegs}
+  alt='The active registrations form when adding a new club official to a club on COMET.'
+/>
+
+:::tip
+
+- If your club isn't automatically in the field, use the magnifying glass button to search for your club.
+- Ensure that the **organisation** is also your club's governing body (Alberta Soccer, BC Soccer, or Ontario Soccer).
+- Ensure that the discipline is **football** and not anything else.
+- Enter the current date in the **Date From** field (if this changes we will let you know).
+
+:::
+
+Once you have successfully saved and submitted the club official, wait for approval from the league to confirm the registration. After that, you club official will be available in your competitions.
+
+### The searched club-official is already in COMET
+
+woo
