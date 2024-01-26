@@ -23,6 +23,10 @@ export default defineConfig({
 					autogenerate: { directory: 'registrations' }
 				},
 				{
+					label: 'Club Operations',
+					autogenerate: { directory: 'club-operations' }
+				},
+				{
 					label: "Match Operations",
 					autogenerate: { directory: 'match-operations' }
 				},
