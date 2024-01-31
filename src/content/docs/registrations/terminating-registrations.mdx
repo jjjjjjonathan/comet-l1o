@@ -3,7 +3,9 @@ title: Terminating registrations
 description: A guide on terminating a player, coach, or staff registration on COMET
 ---
 
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
+import sidebar from '@assets/terminations/sidebar.webp';
+import clubMainPage from '@assets/terminations/club-main-page.webp';
 
 If a former player, coach, or staff member has an active registration with your club, you can terminate their registration through COMET.
 
@@ -15,12 +17,28 @@ Terminating registrations can only be done on the web application, not through t
 
 ## Finding your club members with active registrations
 
-- go to club page by clicking on my club
-- players tab will show players
-- coaches tab will show coaches AND staff
-- click on the person you want to terminate to go to their person page
-- in their active registration, click on edit
-- change date to field to when their registration ended
-- give termination reason (only needed for players)
-- click on save as and select save as terminated
-- pop up, you can confirm termination. reason field is optional
+In the left sidebar, open the **Clubs** tab and click on **My Club** to go to your club's main page.
+
+<Image
+  src={sidebar}
+  alt="The navigation sidebar in COMET's web application where the My Club button will take you to a club's main page"
+/>
+
+On your club's main page, click on the **Players** tab to show the list of players with active registrations under your club. Clicking on the **Coaches** tab will show a list of registered coaches and staff members. If you find a person whose registration you want to terminate, click on their name to go to their **Person** page.
+
+<Image
+  src={clubMainPage}
+  alt='The club main page in COMET where you can click on the Players or Coaches tabs to get lists of registered players or coaches'
+/>
+
+## Terminating a registration from a person's page
+
+On a player's or coach's person page, you can find their active registrations at the bottom, and click on **Edit** to start the termination process.
+
+import editRegistration from '@assets/terminations/edit-registration.webp';
+
+<Image src={editRegistration} alt='' />
+
+Once you are in the edit page, change the **Date to** field to the date when the registration ended. If you are terminating a registration for a player, you also have to provide a reason in the dropdown menu, such as **National Transfer**, **Retired**, or **Other** among options.
+
+When you are done, click on the **Save as...** button, and then click on **Save as TERMINATED**. A confirmation modal will pop up, asking if you're sure you want to change a status from **CONFIRMED** to **TERMINATED**. You can optionally fill out a reason in the box, and then click on **Yes** to finalize the termination.
