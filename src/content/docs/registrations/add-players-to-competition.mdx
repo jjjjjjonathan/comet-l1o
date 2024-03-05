@@ -1,17 +1,65 @@
 ---
 title: Adding players and officials to a competition roster
-description: A guide on adding players into a specific competition roster in COMET
+description: A guide on adding people into a specific competition roster in COMET
 lastUpdated: true
 ---
 
+import { Image } from 'astro:assets';
+
 :::note
 
-This guide is only for BC
+Adding people to a competition can only be done through the web application, and not the COMET Football apps on iOS and Android.
+
+This step is only necessary for League1 BC and Alberta clubs. League1 Ontario clubs should skip this step until stated otherwise.
 
 :::
 
-- Go to competition page
-- Find your team in list of clubs
-- Click on plus to add player
-- Check off players and add jersey numbers
-- do the similar thing for officials
+After registering players, coaches, and team officials into your club pool, you need to add them into the respective competitions so they can be added into match-day lineups.
+
+## Navigate to the competition
+
+To access a list of your competitions, click on **My Competitions** from the left sidebar after clicking on the competitions module. From there, select the competition you would like to add a player or team official to your club. For example, if you wanted to add a player to your roster in the 2024 Men's League1 BC competition, select League1 BC (M) 2024.
+
+import myCompetitions from '@assets/registrations/my-competitions.webp';
+
+<Image
+  src={myCompetitions}
+  alt='The My Competitions page on the COMET web application. A red box highlights a link to where you can navigate to the My Competitions page.'
+/>
+
+## Navigate to your club in the competition
+
+Once you have entered the specific competition, click on the **Clubs** tab to show a list of clubs participating in the competition. If you want to add players, click on the plus sign under the **Players** column that corresponds to your club. For coaches and team officials, click on the plus sign under the **Officials** column that corresponds to your club.
+
+import competitionClubsList from '@assets/registrations/competition-clubs-list.webp';
+
+<Image
+  src={competitionClubsList}
+  alt='The clubs list under the clubs tab of a competition. A red box highlights the Players and Officials columns where clubs can add people to their competition rosters.'
+/>
+
+## Add people to your competition roster
+
+A modal will pop up listing the players or team officials in your club pool. Select your player or team official using the corresponding checkbox on the right-most column. If you're selecting a player, you can also assign a shirt number under the "**#**" column. When you're finished selecting all of your players and team officials, click on **Add selected** at the bottom to finish the process.
+
+import addToCompetitionRoster from '@assets/registrations/add-to-competition-roster.webp';
+
+<Image
+  src={addToCompetitionRoster}
+  alt='The modal that pops up when you want to add players to a competition roster.'
+/>
+
+## Submit your competition roster
+
+Once you have added all of your players and team officials to the competition, you must change the status of your roster from **Entered** to **Submitted**.
+
+Click on the dropdown arrow button that corresponds with your club, and select **Submitted** to change the status and submit the roster for your provincial association to approve.
+
+import submitRoster from '@assets/registrations/submit-roster.webp';
+
+<Image
+  src={submitRoster}
+  alt='The clubs tab of a competition. The first club, Altitude FC is submitting their roster by clicking on the dropdown arrow that is in focus and selecting the option of submitted to change the status.'
+/>
+
+After approval, the status of the roster will be changed to **Confirmed**.
