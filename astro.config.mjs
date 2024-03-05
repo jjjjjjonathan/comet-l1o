@@ -20,7 +20,12 @@ export default defineConfig({
 				},
 				{
 					label: 'Registrations',
-					autogenerate: { directory: 'registrations' }
+					items: [
+						{ label: 'Registering players', link: '/registrations/players' },
+						{ label: 'Registering team officials', link: '/registrations/team-officials' },
+						{ label: 'Adding players and officials to a competition roster', link: '/registrations/add-people-to-competition' },
+						{ label: 'Terminating registrations', link: '/registrations/terminating-registrations' }
+					]
 				},
 				{
 					label: 'Club Operations',
