@@ -32,6 +32,12 @@ export default defineConfig({
 					autogenerate: { directory: 'club-operations' }
 				},
 				{
+					label: 'Match Officials',
+					items: [
+						{ label: 'Editing your personal info', link: '/match-officials/edit-personal-info' }
+					]
+				},
+				{
 					label: "Match Operations",
 					autogenerate: { directory: 'match-operations' }
 				},
