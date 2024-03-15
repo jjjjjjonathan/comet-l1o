@@ -16,6 +16,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Logging into COMET', link: '/getting-started/logging-in' },
+						{ label: 'Editing your account info', link: '/getting-started/editing-account-info' }
 					],
 				},
 				{
