@@ -1,0 +1,80 @@
+---
+title: Setting a match lineup
+lastUpdated: true
+description: A guide on setting a lineup for a match as a club referent or lineup manager
+---
+
+import { Image } from 'astro:assets';
+
+## Setting a lineup in the COMET Football mobile app
+
+Download the COMET Football app on the iOS App Store and Google Play Store for Android, and log in with your account credentials provided to you by COMET.
+
+### Finding your match to set the lineup
+
+After logging into the COMET Football app, you'll be greeted with the main calendar screen. Each dot on one of the days in the calendar represents a match. You can click on a day to see a list of matches for that day. Click on one of the matches to go to the specific game page.
+
+import calendar from '@assets/match-ops/calendar.webp';
+
+<Image
+  src={calendar}
+  alt='The calendar screen after you log in to COMET Football. Dots in the days of the calendar represent a match scheduled for the team. There is also a list of matches at the bottom of the screen, and clicking on a match will take you to its specific page.'
+/>
+
+Alternatively, you can also click on the ball icon at the bottom to see a list of matches. Matches under the **UPCOMING** tab are matches that haven't been finished yet, and matches under the **PREVIOUS** tab are games that have been completed. Selecting one of these matches will also take you to the specific game page.
+
+import matchesList from '@assets/match-ops/matches-list.webp';
+
+<Image src={matchesList} alt='The My Matches page in COMET Football.' />
+
+### Viewing the match and switching to your team tab
+
+import matchPage from '@assets/match-ops/match-page.webp';
+
+The match page will start under the **INFO** tab where you can find details on the location and scheduled time/date of the match. Swipe to your team's tab as either **HOME** or **AWAY** to see your lineup.
+
+<Image src={matchPage} alt='' />
+
+### Setting your players in the match lineup
+
+Press **Add** beside either **Starting lineup** or **Substitutes** to select players for your match lineup. You will see a list of available players.
+
+If you have set a lineup in the last match, you can press the **Previous** button to select the same players. You will be able to make changes after so this is the quickest way to set your lineup in the middle of the season.
+
+To select players manually, press the green button with the plus sign beside the player you want to pick. Make sure **SL** is in blue if they are in the starting lineup. If the player is a goalkeeper, **GK** has to be blue. If the player is the captain, **CP** has to be blue. Press the circle beside the player's name to add or edit their shirt number.
+
+import playerSelect from '@assets/match-ops/player-select.webp';
+
+<Image src={playerSelect} alt='' />
+
+When finished, press the blue button with a checkmark in the bottom right to move your selected players into the match lineup. You can view your selection when you switch from the **Available** tab to the **Lineup** tab at the top of the screen. You can make any necessary edits in the lineup tab, including changes to specific player numbers, roles, and whether they're a starter or a substitute. Please note that the lineup in this state is not considered finalized or submitted as you still need to select your coaches and team officials.
+
+import editLineup from '@assets/match-ops/edit-lineup.webp';
+
+<Image src={editLineup} alt='' />
+
+### Setting your team officials in the lineup
+
+Go back to the match page under your team tab, and press \*Add** beside **Team officials** to assign your coaches and other bench roles. Much like the player, you can use the **Previous\*\* button to select the team officials from your last match.
+
+To select a team official manually, press the green button with a plus sign under the role you want to assign a team official to. Select from the list of names registered to your club in those roles.
+
+import coachSelect from '@assets/match-ops/coach-select.webp';
+
+<Image src={coachSelect} alt='' />
+
+At a minimum, you need to have at least someone assigned to the **Head coach** role. If you want to assign extra people in the listed roles, press **Add team officials** to select a role to add, and follow the same process outlined above.
+
+import addTeamOfficials from '@assets/match-ops/add-team-officials.webp';
+
+<Image src={addTeamOfficials} alt='' />
+
+### Confirming your lineup selection
+
+After you have selected your players and team officials, go back to the match page under your team tab of **HOME** or **AWAY**, and press the **Set to CONFIRMED** button at the bottom. You do not need to enter a reason or description. Just press the checkmark to confirm your lineup selection.
+
+import confirmLineup from '@assets/match-ops/confirm-lineup.webp';
+
+<Image src={confirmLineup} alt='' />
+
+## Setting a lineup in COMET's web application
