@@ -40,7 +40,10 @@ export default defineConfig({
 				},
 				{
 					label: "Match Operations",
-					autogenerate: { directory: 'match-operations' }
+					items: [
+						{ label: 'Setting a match lineup', link: '/match-operations/setting-match-lineup'},
+						{ label: 'Adding goals or own goals', link: '/match-operations/adding-goals' }
+					]
 				},
 
 				{
