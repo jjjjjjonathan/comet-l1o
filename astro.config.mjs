@@ -41,8 +41,11 @@ export default defineConfig({
 				{
 					label: "Match Operations",
 					items: [
-						{ label: 'Setting a match lineup', link: '/match-operations/setting-match-lineup'},
-						{ label: 'Adding goals or own goals', link: '/match-operations/adding-goals' }
+						{ label: 'Setting a match lineup', link: '/match-operations/setting-match-lineup' },
+						{ label: 'Adding goals or own goals', link: '/match-operations/adding-goals' },
+						{ label: 'Adding yellow or red cards', link: '/match-operations/adding-cards' },
+						{ label: 'Adding substitutions (without re-entry)', link: '/match-operations/adding-subs-no-reentry' },
+						{ label: 'Adding substitutions (re-entry allowed)', link: '/match-operations/adding-subs-with-reentry' }
 					]
 				},
 
