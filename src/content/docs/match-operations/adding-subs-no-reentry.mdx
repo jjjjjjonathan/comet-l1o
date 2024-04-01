@@ -1,14 +1,14 @@
 ---
-title: Adding goal events to a match
+title: Adding substitution events to a match (without re-entry)
 lastUpdated: true
-description: A guide on creating and editing goal events as a match commissioner, club referent, or club lineup manager
+description: A guide on creating and editing substitutions as a match commissioner, club referent, or club lineup manager
 ---
 
 import { Image } from 'astro:assets';
 
 You can add match events to players and officials in the lineup with the COMET Footall app or the web application on your computer's internet browser. This will give crucial information to fans as the events populate the match timeline in our League1 Live app and sends push notifications to users following the competitions, clubs, or games.
 
-## Adding a goal or own goal through the COMET Football mobile application
+## Adding a substitution through the COMET Football mobile application
 
 On a match page in the COMET Football app, you have to go to the specific team tab to add goal events. Press on the corresponding tab at the top or swipe until you are at the specific team tab you want. For this example, we will select the **HOME** tab.
 
@@ -16,27 +16,31 @@ import mobileMatchPage from '@assets/match-ops/mobile-match-page.webp';
 
 <Image src={mobileMatchPage} alt='' />
 
-### Select the scorer and event type
+### Select the player going into the match
 
-Switching to a team tab (HOME or AWAY) will show you the lineup for the corresponding team. When you find the player who scored a goal, press on their name, and select the event type: **Goal**, **Own goal**, or **Penalty** (that is scored, not one that is missed). In this example, I pressed on Carlo Rivera, and I'm given options multiple options for the event type.
+Switching to a team tab (HOME or AWAY) will show you the lineup for the corresponding team. The first player you should select is the person that will be entering the match. In the substitutes section, press on their name, and select the **Substitution** event type. In this example, I pressed on Dominic Toretto, and I'm given options multiple options for the event type.
 
-import mobileEventType from '@assets/match-ops/mobile-event-type.webp';
+import mobileSubEventType from '@assets/match-ops/mobile-sub-event-type.webp';
 
-<Image src={mobileEventType} alt='' />
+<Image src={mobileSubEventType} alt='' />
 
-### Inputting the minute when the goal was scored
+### Inputting information on the substitution
 
-Once you have selected your event type, you'll be taken to a new screen where you can input the minute of when the goal was scored. Any event with a minute of 46 or great will count towards the second half or other extra time periods. Use the stoppage time section of the form for events in added time. Once you have finished, you can press **Save** to confirm the goal, and the score of the match will reflect your new match event.
+Once you have selected your event type, you'll be taken to a new screen where you can input the minute of the substitution, along with the player leaving the match. Any event with a minute of 46 or great will count towards the second half or other extra time periods. Use the stoppage time section of the form for events in added time.
 
-import mobileEventMinute from '@assets/match-ops/mobile-event-minute.webp';
+The **Substitution** section in this form will open a list of players who are currently considered as playing in the match. Select the who will be coming out of the match. A description is not necessary or mandatory for a substitution. However, you could use that form field to make a note if the substitution was due to a concussion or head injury.
 
-<Image src={mobileEventMinute} alt='' />
+Once you have finished, you can press **Save** to confirm the substitution, and the team's lineup will reflect your new match event.
 
-### Editing or deleting a goal
+import mobileSubDetails from '@assets/match-ops/mobile-sub-details.webp';
 
-On mobile, you can only edit the time of match events you've created. If you want to change the event type (for example, from a goal to a penalty scored), you need to delete the event and create a new one. Press on a player's name who has the associated match events you want to edit or delete.
+<Image src={mobileSubDetails} alt='' />
 
-The screen will switch to their player page with a list of events. Press on the event you want to edit or delete. In the next screen, you can either change the time and save it, or press the red garbage bin in the top right to delete the event.
+### Editing or deleting a substitution
+
+If you want to change the player entering the match, you need to delete the event and create a new one. Press on a player's name who has the associated match events you want to edit or delete.
+
+The screen will switch to their player page with a list of events. Press on the event you want to edit or delete. In the next screen, you can either edit the details (such as time or player coming out of the match) and save it, or press the red garbage bin in the top right to delete the event.
 
 import mobileEditDeleteEvent from '@assets/match-ops/mobile-edit-delete-event.webp';
 
@@ -44,46 +48,8 @@ import mobileEditDeleteEvent from '@assets/match-ops/mobile-edit-delete-event.we
 
 ## Adding a goal or own goal through your web browser
 
-On a match page in COMET's web application, you have to go to the specific team tab to add goal events. At the top of the match page, click on the corresponding team tab to the player who scored the (own) goal. For this example, we will select **WINDSOR CITY FC MEN**.
+:::note
 
-import matchSelectTeamTab from '@assets/match-ops/match-select-team-tab.webp';
+Coming soon!
 
-<Image src={matchSelectTeamTab} alt='' />
-
-### Finding the player who just scored (web)
-
-Once you are in the team tab, scroll down to the **Players** panel where you can see your starting lineup and substitutes. Find the player who scored in the list, and click on the button with the plus sign to add a match event for that player. In this example, we will select Carlo Rivera.
-
-import playerListMatchEvent from '@assets/match-ops/player-list-match-event.webp';
-
-<Image src={playerListMatchEvent} alt='' />
-
-### Selecting the match-event type and inputting the minute
-
-The following modal will allow you to choose an **Event type**. The scoring events in the list you can select from are **Goal**, **Own goal**, and **Penalty** (specifically a penalty that was scored, not one that was missed).
-
-import webMatchEventType from '@assets/match-ops/web-match-event-type.webp';
-
-<Image src={webMatchEventType} alt='' />
-
-Select your event type, and write the minute of the goal in the following form field. Any event with a minute of 46 or great will count towards the second half or other extra time periods. Use the stoppage time section of the form for events in added time. Once you have finished, you can press **Save** to confirm the goal, and the score of the match will reflect your new match event.
-
-import webGoalMinuteEvent from '@assets/match-ops/web-goal-minute-event.webp';
-
-<Image src={webGoalMinuteEvent} alt='' />
-
-### Editing the event type and minute scored
-
-If you would like to change the event type or minute of a goal that was scored, click on the name of the player in the lineup who is linked with the match event. In this case, we will click on Carlo Rivera, and a modal with a list of their events will pop up. Click on the button with the pen icon beside the event you want to edit to make your desired changes.
-
-import webEditGoal from '@assets/match-ops/web-edit-goal.webp';
-
-<Image src={webEditGoal} alt='' />
-
-### Deleting a goal event
-
-You might want to delete a goal event if you attributed the goal to the wrong person or if the goal was later disallowed. After clicking on the player's name in the lineup, press the icon with the garbage bin to delete the event. This will immediately delete the event without warning so make sure you have pressed the correct event you want to delete.
-
-import webDeleteGoal from '@assets/match-ops/web-delete-goal.webp';
-
-<Image src={webDeleteGoal} alt='' />
+:::
