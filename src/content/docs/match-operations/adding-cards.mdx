@@ -1,0 +1,65 @@
+---
+title: Adding yellow or red cards to a match
+lastUpdated: true
+description: A guide on creating and editing card events as a match commissioner, club referent, or club lineup manager
+---
+
+import { Image } from 'astro:assets';
+
+You can add match events to players and officials in the lineup with the COMET Footall app or the web application on your computer's internet browser. This will give crucial information to fans as the events populate the match timeline in our League1 Live app and sends push notifications to users following the competitions, clubs, or games.
+
+## Adding a card through the COMET Football mobile application
+
+On a match page in the COMET Football app, you have to go to the specific team tab to add cautions or dismissals. Press on the corresponding tab at the top or swipe until you are at the specific team tab you want. For this example, we will select the **HOME** tab.
+
+import mobileMatchPage from '@assets/match-ops/mobile-match-page.webp';
+
+<Image src={mobileMatchPage} alt='' />
+
+### Select the player or team official and event type
+
+Switching to a team tab (HOME or AWAY) will show you the lineup for the corresponding team. When you find the person who received a card, press on their name, and select the event type: **Yellow card** or **Red card**. In this example, I pressed on Carlo Rivera, and I'm given options multiple options for the event type.
+
+import mobileEventType from '@assets/match-ops/mobile-event-type.webp';
+
+<Image src={mobileEventType} alt='' />
+
+### Inputting the time and reason for a card
+
+Once you have selected your event type, you'll be taken to a new screen where you can input the time and reason of a card. Any event with a minute of 46 or great will count towards the second half or other extra time periods. Use the stoppage time section of the form for events in added time.
+
+If the card wasn't issued in any of the playing periods, you can use the **Outside match phases** dropdown to select whether the card was issued **Before match**, **During break**, or **After match**. This will disable the minute and stoppage fields.
+
+import cardOutsideMatchPhase from '@assets/match-ops/card-outside-match-phase.webp';
+
+<Image src={cardOutsideMatchPhase} alt='' />
+
+Reasons and mandatory for each card issued. If you are not the referee, you can use **USB** (unsporting behaviour) as a placeholder reason for yellow cards issued to players, and the referee will edit it to the correct reason after the match. For a yellow card issued to a team official, you can select any reason as a placeholder and the referee will select the correct one after the match.
+
+For a red card, the reason and the description are both mandatory. If you are not the referee, use any of the reasons as a placeholder. For the description, enter at least one character or "N/A" and the referee will change it after the match. **If you are not the referee, do not try to describe the dismissal in the description box**.
+
+:::note
+
+A second yellow card that leads to a dismissal should be entered as a yellow card. The red card match event is only for direct red cards.
+
+:::
+
+Once you have finished, you can press **Save** to confirm the card.
+
+### Editing or deleting a card
+
+If you want to change the event type on mobile (for example, from a yellow card to a red card), you need to delete the event and create a new one. Press on a player's name who has the associated match events you want to edit or delete.
+
+The screen will switch to their player page with a list of events. Press on the event you want to edit or delete. In the next screen, you can either change the information and save it, or press the red garbage bin in the top right to delete the event.
+
+import mobileEditDeleteEvent from '@assets/match-ops/mobile-edit-delete-event.webp';
+
+<Image src={mobileEditDeleteEvent} alt='' />
+
+## Adding a yellow or red card through your web browser
+
+:::note
+
+Coming soon!
+
+:::

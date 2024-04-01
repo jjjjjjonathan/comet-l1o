@@ -1,0 +1,35 @@
+---
+title: Adding substitution events to a match (with re-entry)
+lastUpdated: true
+description: A guide on substitution events with re-entry as a match commissioner, club referent, or club lineup manager
+---
+
+import { Image } from 'astro:assets';
+
+Unlike other match events like goals or cards, COMET does not track substitutions in competitions where "flying substitutions" are permitted. While a starting lineup and a bench of substitutes still need to be named and confirmed, a substitute who has entered the game only needs to be labelled as **Played** the first time they enter the match. A time does not have to be provided in COMET.
+
+## Labelling a substitute as **Played** in the COMET Football mobile application
+
+On a match page in the COMET Football app, you have to go to the specific team tab to edit player details. Press on the corresponding tab at the top or swipe until you are at the specific team tab you want. For this example, we will select the **HOME** tab.
+
+import mobileMatchPage from '@assets/match-ops/mobile-match-page.webp';
+
+<Image src={mobileMatchPage} alt='' />
+
+### Selecting and unselecting a player as **Played**
+
+Switching to a team tab (HOME or AWAY) will show you the lineup for the corresponding team. In the substitutes section, you will see a **PL** label in the row of each player. Toggle a player's **PL** status to selected with a blue background when they enter a match for the first time. You do not need to untoggle it if they ever leave the match.
+
+import mobileReentrySubs from '@assets/match-ops/mobile-reentry-subs.webp';
+
+<Image src={mobileReentrySubs} alt='' />
+
+Once a player is considered as **Played**, then you can add goal match events for them as they're considered to have been in the match at some point. Players who are not considered as **Played** will only have access to yellow and red card events from the bench.
+
+## Adding a substitution through your web browser
+
+:::note
+
+Coming soon!
+
+:::
