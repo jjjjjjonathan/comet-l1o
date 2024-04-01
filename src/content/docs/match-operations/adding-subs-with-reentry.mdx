@@ -1,89 +1,35 @@
 ---
-title: Adding goal events to a match
+title: Adding substitution events to a match (with re-entry)
 lastUpdated: true
-description: A guide on creating and editing goal events as a match commissioner, club referent, or club lineup manager
+description: A guide on substitution events with re-entry as a match commissioner, club referent, or club lineup manager
 ---
 
 import { Image } from 'astro:assets';
 
-You can add match events to players and officials in the lineup with the COMET Footall app or the web application on your computer's internet browser. This will give crucial information to fans as the events populate the match timeline in our League1 Live app and sends push notifications to users following the competitions, clubs, or games.
+Unlike other match events like goals or cards, COMET does not track substitutions in competitions where "flying substitutions" are permitted. While a starting lineup and a bench of substitutes still need to be named and confirmed, a substitute who has entered the game only needs to be labelled as **Played** the first time they enter the match. A time does not have to be provided in COMET.
 
-## Adding a goal or own goal through the COMET Football mobile application
+## Labelling a substitute as **Played** in the COMET Football mobile application
 
-On a match page in the COMET Football app, you have to go to the specific team tab to add goal events. Press on the corresponding tab at the top or swipe until you are at the specific team tab you want. For this example, we will select the **HOME** tab.
+On a match page in the COMET Football app, you have to go to the specific team tab to edit player details. Press on the corresponding tab at the top or swipe until you are at the specific team tab you want. For this example, we will select the **HOME** tab.
 
 import mobileMatchPage from '@assets/match-ops/mobile-match-page.webp';
 
 <Image src={mobileMatchPage} alt='' />
 
-### Select the scorer and event type
+### Selecting and unselecting a player as **Played**
 
-Switching to a team tab (HOME or AWAY) will show you the lineup for the corresponding team. When you find the player who scored a goal, press on their name, and select the event type: **Goal**, **Own goal**, or **Penalty** (that is scored, not one that is missed). In this example, I pressed on Carlo Rivera, and I'm given options multiple options for the event type.
+Switching to a team tab (HOME or AWAY) will show you the lineup for the corresponding team. In the substitutes section, you will see a **PL** label in the row of each player. Toggle a player's **PL** status to selected with a blue background when they enter a match for the first time. You do not need to untoggle it if they ever leave the match.
 
-import mobileEventType from '@assets/match-ops/mobile-event-type.webp';
+import mobileReentrySubs from '@assets/match-ops/mobile-reentry-subs.webp';
 
-<Image src={mobileEventType} alt='' />
+<Image src={mobileReentrySubs} alt='' />
 
-### Inputting the minute when the goal was scored
+Once a player is considered as **Played**, then you can add goal match events for them as they're considered to have been in the match at some point. Players who are not considered as **Played** will only have access to yellow and red card events from the bench.
 
-Once you have selected your event type, you'll be taken to a new screen where you can input the minute of when the goal was scored. Any event with a minute of 46 or great will count towards the second half or other extra time periods. Use the stoppage time section of the form for events in added time. Once you have finished, you can press **Save** to confirm the goal, and the score of the match will reflect your new match event.
+## Adding a substitution through your web browser
 
-import mobileEventMinute from '@assets/match-ops/mobile-event-minute.webp';
+:::note
 
-<Image src={mobileEventMinute} alt='' />
+Coming soon!
 
-### Editing or deleting a goal
-
-On mobile, you can only edit the time of match events you've created. If you want to change the event type (for example, from a goal to a penalty scored), you need to delete the event and create a new one. Press on a player's name who has the associated match events you want to edit or delete.
-
-The screen will switch to their player page with a list of events. Press on the event you want to edit or delete. In the next screen, you can either change the time and save it, or press the red garbage bin in the top right to delete the event.
-
-import mobileEditDeleteEvent from '@assets/match-ops/mobile-edit-delete-event.webp';
-
-<Image src={mobileEditDeleteEvent} alt='' />
-
-## Adding a goal or own goal through your web browser
-
-On a match page in COMET's web application, you have to go to the specific team tab to add goal events. At the top of the match page, click on the corresponding team tab to the player who scored the (own) goal. For this example, we will select **WINDSOR CITY FC MEN**.
-
-import matchSelectTeamTab from '@assets/match-ops/match-select-team-tab.webp';
-
-<Image src={matchSelectTeamTab} alt='' />
-
-### Finding the player who just scored (web)
-
-Once you are in the team tab, scroll down to the **Players** panel where you can see your starting lineup and substitutes. Find the player who scored in the list, and click on the button with the plus sign to add a match event for that player. In this example, we will select Carlo Rivera.
-
-import playerListMatchEvent from '@assets/match-ops/player-list-match-event.webp';
-
-<Image src={playerListMatchEvent} alt='' />
-
-### Selecting the match-event type and inputting the minute
-
-The following modal will allow you to choose an **Event type**. The scoring events in the list you can select from are **Goal**, **Own goal**, and **Penalty** (specifically a penalty that was scored, not one that was missed).
-
-import webMatchEventType from '@assets/match-ops/web-match-event-type.webp';
-
-<Image src={webMatchEventType} alt='' />
-
-Select your event type, and write the minute of the goal in the following form field. Any event with a minute of 46 or great will count towards the second half or other extra time periods. Use the stoppage time section of the form for events in added time. Once you have finished, you can press **Save** to confirm the goal, and the score of the match will reflect your new match event.
-
-import webGoalMinuteEvent from '@assets/match-ops/web-goal-minute-event.webp';
-
-<Image src={webGoalMinuteEvent} alt='' />
-
-### Editing the event type and minute scored
-
-If you would like to change the event type or minute of a goal that was scored, click on the name of the player in the lineup who is linked with the match event. In this case, we will click on Carlo Rivera, and a modal with a list of their events will pop up. Click on the button with the pen icon beside the event you want to edit to make your desired changes.
-
-import webEditGoal from '@assets/match-ops/web-edit-goal.webp';
-
-<Image src={webEditGoal} alt='' />
-
-### Deleting a goal event
-
-You might want to delete a goal event if you attributed the goal to the wrong person or if the goal was later disallowed. After clicking on the player's name in the lineup, press the icon with the garbage bin to delete the event. This will immediately delete the event without warning so make sure you have pressed the correct event you want to delete.
-
-import webDeleteGoal from '@assets/match-ops/web-delete-goal.webp';
-
-<Image src={webDeleteGoal} alt='' />
+:::
