@@ -1,0 +1,61 @@
+---
+title: Using the match timer
+lastUpdated: true
+description: A guide using the timer for live match statuses
+---
+
+import { Image } from 'astro:assets';
+
+Once the match has kicked off, starting the timer will immediately send push notifications to users of League1 Live that the match has started, along with updating League1 websites with real-time information. COMET makes it easy for designated people to start the clock for any given time period in both the web application and the COMET Football mobile app.
+
+## Starting a match phase
+
+To start a match phase (first half, second half, etc.), press **IN PROGRESS** on the web application or **Start game**/**In progress** in the COMET Football mobile app. The exact time that you pressed the button will be recorded which will be used to calculate the current minute of a match.
+
+import mobileStartGame from '@assets/match-ops/mobile-start-game.webp';
+
+<Image src={mobileStartGame} alt='' />
+
+import webStartGame from '@assets/match-ops/web-start-game.webp';
+
+<Image src={webStartGame} alt='' />
+
+Only a competition manager or administrator can edit the value of the timer. If you pressed the button too early or late, note the correct start time and contact the competition admin to make the change.
+
+## Ending a match phase (but not ending the match)
+
+Press **BREAK** to end the current match phase without ending the full match. You would do this when:
+
+- The first half has ended and the match is going into half-time break.
+- The second half has ended and the match is going into extra time.
+- The second half has ended and the match will go into a penalty shootout.
+- The first extra time period has ended and the match will go into the second extra time period.
+- The second extra time period has ended and the match will go into a penalty shootout.
+
+import mobileBreakButton from '@assets/match-ops/mobile-break-button.webp';
+
+<Image src={mobileBreakButton} alt='' />
+
+import webBreakButton from '@assets/match-ops/web-break-button.webp';
+
+<Image src={webBreakButton} alt='' />
+
+Only a competition manager or administrator can edit the value of the timer. If you pressed the button too early or late, note the correct end time and contact the competition admin to make the change.
+
+Refer to [starting a match phase](#starting-a-match-phase) when the break is over and the match is in progress again. This includes when the match starts again for the penalty shootout.
+
+## Adding extra-time or penalty shootout phases
+
+All matches by default only have first and second halves enabled. Before putting the match in progress for extra time or a penalty shootout, you'll need to contact the competition manager or administrator to enable those respective match phases.
+
+## Ending a match at full-time
+
+Press **Full time** to end a match. This will send out a push notification that the match has ended. The referee will still need to confirm all the match events and change the status of the game to **PLAYED** in order for results to be finalized.
+
+import mobileFullTime from '@assets/match-ops/mobile-full-time.webp';
+
+<Image src={mobileFullTime} alt='' />
+
+import webFullTime from '@assets/match-ops/web-full-time.webp';
+
+<Image src={webFullTime} alt='' />
