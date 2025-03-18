@@ -54,6 +54,10 @@ export default defineConfig({
               label: 'Editing your personal info',
               link: '/match-officials/edit-personal-info',
             },
+            {
+              label: 'Setting unavailability periods',
+              link: '/match-officials/set-unavailability',
+            },
           ],
         },
         {
