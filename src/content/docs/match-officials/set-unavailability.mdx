@@ -1,0 +1,33 @@
+---
+title: Setting unavailability periods
+description: A guide on setting your unavailabile days and/or times as a referee
+lastUpdated: true
+---
+
+import { Image } from 'astro:assets';
+
+As a match official, you need to set unavailability periods so referee managers and assignors know when to not assign you to a match.
+
+## Finding the unavailabilities page
+
+In the left sidebar of [COMET's web application](https://comet.canadasoccer.com), click on the **Referees and Officials** tab, and select the **Availability** option. This should take you to the Unavailabilities page in COMET. From there, click on the **+** button beside Unavailable Intervals to create your unavailability periods.
+
+import refUnavailability from '@assets/referees/ref-unavailability.webp';
+
+<Image src={refUnavailability} alt='' />
+
+## Setting your unavailabilities
+
+All the fields marked with red labels are considered mandatory by COMET and Canada Soccer.
+
+`Date from` indicates the start of the period you are creating. `Date to` would indicate the end. If you leave that blank, the unavailability period would be indefinite.
+
+Setting the two dates above does not mean you will be unavailable in all of those days. Check off the days of the week where you would want to be unavailable in a given period. For example, if you want to be unavailable on Tuesdays and Thursdays between April 1-14, set the `Date from` to be April 1, `Date to` to be April 14, and only check off Tuesday and Thursday.
+
+`Time from` and `Time to` would indicate to a referee manager if you're unavailable on a given day only during specific times. If you are unavailable from 9:00 am to 5:00 pm due to work but are available after 5:00 pm for matches, indicate that as such using those fields. Do not put anything in those fields if the whole day needs to be blocked off.
+
+After you have finished filling out the fields, click on the **Save** button to complete the process.
+
+import refUnavailabilityModal from '@assets/referees/ref-unavailability-modal.webp';
+
+<Image src={refUnavailabilityModal} alt='' />
