@@ -58,6 +58,10 @@ export default defineConfig({
               label: 'Setting unavailability periods',
               link: '/match-officials/set-unavailability',
             },
+            {
+              label: 'Accepting or rejecting assignments',
+              link: '/match-officials/accept-reject-assignment',
+            },
           ],
         },
         {
