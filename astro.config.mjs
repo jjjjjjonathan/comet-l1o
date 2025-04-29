@@ -28,6 +28,11 @@ export default defineConfig({
         {
           label: 'Registrations',
           items: [
+            {
+              label: 'Registering players (SCR)',
+              link: '/registrations/players-scr',
+              badge: 'New',
+            },
             { label: 'Registering players', link: '/registrations/players' },
             {
               label: 'Registering team officials',
