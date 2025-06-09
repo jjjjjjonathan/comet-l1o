@@ -1,0 +1,180 @@
+---
+title: Registering players (SCR Workflow)
+description: A guide on registering players in COMET through the web application
+lastUpdated: true
+---
+
+import { Image } from 'astro:assets';
+
+In this guide, we will cover registering players within COMET's new Standard Club Registration workflow.
+
+:::note
+
+Player registration can only be done on the web application, not through the mobile apps on iOS and Android.
+
+This guide will also require you to be on [MyComet](https://comet.canadasoccer.com/mycomet).
+
+:::
+
+## Registering a player to your club in COMET
+
+To maintain player history and prevent duplicates of the same player, we start by searching for the player.
+
+### Finding Players in My Club
+
+Click on **My Club** in the left sidebar to go to your club page, and select the **Players** to see your list of players.
+
+import myClub from '@assets/scr/my-club.webp';
+
+<Image src={myClub} alt='' />
+
+import playerList from '@assets/scr/player-list.webp';
+
+<Image src={playerList} alt='' />
+
+The right-most column contains the status of your registrations.
+
+- **ENTERED** means the person is still being reviewed by your club (as if it is a draft). You would have the ability to edit details of the person or registration.
+- **SUBMITTED** means the person's details and registrations have been finalized by your club, and you have submitted the registration to the approval process. Submitting your registrations is necessary for your league's registrar and administrators to be notified.
+- **CONFIRMED** means the person has been approved by your league's registrar and administrator, and they should be available for lineup selection in matches.
+
+This will be the best way to monitor the progress of your registrations should you wish to contact your league's registrar and administrator for an update.
+
+You can click on any of the players in this list to get more of their person or registration details if necessary. The three dots on the right will also give you the opportunity to submit or cancel any registrations.
+
+### Starting a new player registration
+
+Click on the **New Registration** button on the right side to start a new player registration for someone who currently isn't Entered, Submitted, or Confirmed.
+
+import newReg from '@assets/scr/new-reg.webp';
+
+<Image src={newReg} alt='' />
+
+The first step of the registration process is to search if a player is potentially already in COMET. Fill out the form with the details needed to search (for our purposes, name and date of birth should be enough). Click on the **Search** button to look for any matching players.
+
+import playerSearch from '@assets/scr/player-search.webp';
+
+<Image src={playerSearch} alt='' />
+
+:::tip
+
+If a player has accented characters in their name, try searching with and without them when using name search.
+
+:::
+
+If any of the players in the list are the player you are trying to register, select them and click on **Next** to move onto the next step. If none of the players who popped up are the one you are trying to register, or there were no search results, click on **Create New Person** to move onto the next step.
+
+## Create a new person in COMET
+
+If a player isn't in COMET, you'll be registering them into the system for the first time. Fill out the details of the player in the form.
+
+import newPerson from '@assets/scr/new-person.webp';
+
+<Image src={newPerson} alt='' />
+
+## Create registration details for an existing player
+
+If you selected an existing person from COMET, the second step of the registration process is to enter the registration details.
+
+import regDetails from '@assets/scr/reg-details.webp';
+
+<Image src={regDetails} alt='' />
+
+After searching whether a player exists in COMET or not, you can move on to registering the player.
+
+More often than not, you should choose **Registration** for the registration type. You would select **Additional eligibility** if a player is being loaned to your club and needs to maintain a registration elsewhere.
+
+The level of the registration should be **Amateur** for League1 Canada purposes. The discipline should be **Football**. If the player needs an ITC, the clearance type should be **Adult ITC** and you should write the previous club and association in the Notes field.
+
+After saving, if a modal pops up about a transfer agreement, indicate **No - I want to submit registration without transfer agreement** to move onto the next step.
+
+import transferAgreement from '@assets/scr/transfer-agreement.webp';
+
+<Image src={transferAgreement} alt='' />
+
+## Add a headshot for the player
+
+The third step of the registration process will allow you to upload documents for the player. The only relevant one you need to upload is the headshot/photo. Press the green camera icon to upload a photo.
+
+import documents from '@assets/scr/documents.webp';
+
+<Image src={documents} alt='' />
+
+Two icons will show up, a camera and an image. The image icon on the right will allow you to upload a photo from your file system.
+
+import photoUpload from '@assets/scr/photo-upload.webp';
+
+<Image src={photoUpload} alt='' />
+
+After uploading the photo, you will also have the ability to crop and adjust the photo. When finished, hit **Save** and then **Next** to move onto the next step.
+
+import cropPhoto from '@assets/scr/cropPhoto.webp';
+
+<Image src={cropPhoto} alt='' />
+
+## Finalize registration details and submit
+
+The last step of the registration process is to review the registration and submit it. After your view, press the **Submit** button and wait for your league's registrar or administrator to confirm the registration.
+
+import submitReg from '@assets/scr/submit-reg.webp';
+
+<Image src={submitReg} alt='' />
+
+If you receive an error that tells you a "National ID is required" when submitting the registration, please press the _Submit later_ button because you need to edit the person's details to add a National ID.
+
+Go back to the player list of your club to find the registration that you just **entered**. Click on the row that contains the player.
+
+import playerListEntered from '@assets/scr/player-list-entered.webp';
+
+<Image src={playerListEntered} alt='' />
+
+Go to the **Person** tab where you can edit a player's details, including the **National ID**. If your provincial or regional association has an ID number (such as the SEOS number in Ontario Soccer), use that as the National ID. Otherwise, please write a unique string of capital letters and numbers.
+
+import nationalId from '@assets/scr/national-id.webp';
+
+<Image src={nationalId} alt='' />
+
+Once the National ID field is filled, go back to the details tab to submit the registration.
+
+import submitRegLater from '@assets/scr/submit-reg-later.webp';
+
+<Image src={submitRegLater} alt='' />
+
+A form will open up where you can enter your player's information. Any form fields with red labels are mandatory, while the rest are optional.
+
+:::tip
+
+- For **National ID**, put the player identification ID from your governing body (for Ontario Soccer, this is their SEOS number).
+- Enter full names in the **Family** and **First Name** fields, but enter the player's preferred name under **Common Name**. For example, the common name of David Wayne Hoilett Jr. is **Junior Hoilett**.
+- **Passport #** is required by Canada Soccer, but we understand that not everyone will have a passport. Use something like a driver's licence or health card, and include an acronym in front of the number (something like `DL1234567890` for a driver's licence).
+- This will be the best time to include a player's headshot. Click on **Choose image** to upload a photo per your league's specifications in the manual.
+
+:::
+
+Before you save, you will also need to fill out the active registrations section at the bottom.
+
+:::tip
+
+- If your club isn't automatically in the field, use the magnifying glass button to search for your club.
+- Ensure that the **organisation** is also your club's governing body (Alberta Soccer, BC Soccer, or Ontario Soccer).
+- Ensure that the discipline is **football** and not anything else.
+- Registration type in this case should be **First Registration**.
+- Enter the current date in the **Date From** field (if this changes we will let you know).
+
+:::
+
+Once you have successfully saved and submitted the player, wait for approval from the league to confirm the registration. After that, you player will be available in your competitions.
+
+### The searched player is already in COMET
+
+If the player you searched for is already in the COMET system, you can click on their name to go to their person page. Under active registrations, click on **New Registration**.
+
+:::note
+
+Even if a player doesn't currently have an active registration, you will still find the button in this section.
+
+:::
+
+In the new registration page, ensure that the club listed in the form is your club, the discipline is **Football**, the registration type is **Registration** and the **Date from** is the current date. After you are done, click on **Save** to submit the registration.
+
+If the player already had an existing active registration, this will initiate the transfer process. Wait for approval from the governing body, and then the player should be available for competitions.
